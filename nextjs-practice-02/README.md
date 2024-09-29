@@ -1,3 +1,10 @@
+# 参考サイト
+[Next.js] Next.js14を使ってTodoリスト作ってみた
+https://zenn.dev/d2c_mtech_blog/articles/151c79ec187a1c
+UIフレームワーク
+https://ui.shadcn.com
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

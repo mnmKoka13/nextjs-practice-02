@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Button } from '@/app/components/ui/button'
+import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const Header = () => {
@@ -10,7 +10,9 @@ const Header = () => {
           <Link href="/">Todo List app</Link>
         </h1>
       </div>
-      <Button size="sm">New Task</Button>
+      <Button size="sm">
+        <Link href='create/'>New Task</Link>
+      </Button>
     </header>
   )
 }
