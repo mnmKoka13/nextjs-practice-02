@@ -1,9 +1,12 @@
 'use client'
 
+import { AlertDialogTrigger } from '../ui/alert-dialog'
+
 import React, { FC, useState } from 'react'
 import { Button } from '../ui/button'
 import { Checkbox } from '../ui/checkbox'
 import { TrashIcon } from '../ui/icons/TrashIcon'
+import { ConfirmDialog } from './confirmDialog'
 
 type Props = {
   title: string;
@@ -23,9 +26,12 @@ export const Todo: FC<Props> = ({ title, description }) => {
         <h3 className='font-medium leading-none'>{title}</h3>
         <p className='text-sm text-gray-500 dark:text-gray-400'>{description}</p>
       </div>
-      <Button className='rounded-full w-8 h-8' size='icon' variant='destructive'>
-        <TrashIcon className='w-4 h-4' />
-      </Button>
+      <AlertDialogTrigger asChild>
+        <Button className='rounded-full w-8 h-8' size='icon' variant='destructive'>
+          <TrashIcon className='w-4 h-4' />
+        </Button>
+      </AlertDialogTrigger>
+      <ConfirmDialog />
     </div>
   )
 }
